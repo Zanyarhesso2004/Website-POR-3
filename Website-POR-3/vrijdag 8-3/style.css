@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181A1B;
+}
+
+.navbar {
+    background-color: #06002D;
+    overflow: hidden;
+    text-align: right;
+    height: 80px;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 90px;
+    margin-top: 15px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .edit-button,
+.navbar .delete-button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.navbar .delete-button {
+    background-color: #f44336;
+}
+
+.navbar .edit-button:hover,
+.navbar .delete-button:hover {
+    background-color: #45a049;
+}
+
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #06002D;
+    color: #fff;
+}
+
+footer {
+    background-color: #06002D;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #06002D;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 90px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #06002D;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.h1-container {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 37%;
+    left: 20px;
+    color: rgb(219, 219, 219);
+}
+
+.tekst-container {
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+.tekst {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+#tekst1 {
+    position: absolute;
+    top: 66%;
+    left: 76%;
+    color: white;
+    line-height: 1.5;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 3%;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin: 11% 40px;
+    margin-top: 8%;
+}
+
+.producten-button {
+    padding: 8px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    top: 75%;
+    left: 76%;
+    width: 10%;
+}
+
+.toevoegen-button,
+.verwijderen-button {
+    padding: 10px;
+    background-color: #272eb0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    margin-top: 20px;
+}
+
+.toevoegen-button:hover,
+.verwijderen-button:hover {
+    background-color: #cc5500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-container input[type="text"],
+.input-container button {
+    padding: 10px;
+    margin: 10px;
+    width: calc(25% - 20px); /* Bereken de breedte van elk element */
+}
+
+.input-container input[type="text"] {
+    box-sizing: border-box; /* Voeg de padding toe aan de breedte */
+}
+
+.input-container button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #45a049;
+}
+
+
+
+.input-button {
+    padding: 10px;
+    background-color: #4caf50; /* Groene kleur */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.input-button:hover {
+    background-color: #45a049; /* Donkerdere groene kleur bij hover */
+}
+
+        /* CSS voor de bewerk- en verwijderknoppen */
+        .edit-button, .delete-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .delete-button {
+            background-color: #f44336;
+        }
+
+        .edit-button:hover, .delete-button:hover {
+            background-color: #45a049;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            /* Stijlregels voor de navigatiebalk */
+            .navbar {
+                text-align: center;
+            }
+            
+            .navbar a {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        
+            /* Stijlregels voor de tabel */
+            table {
+                width: 100%;
+            }
+        
+            table th,
+            table td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+        
+        
